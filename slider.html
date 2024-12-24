@@ -8,6 +8,10 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
     <style>
       /* Additional styling for positioning and layout */
       .slider-container {
@@ -84,7 +88,7 @@
     </style>
   </head>
   <body>
-    <!-- Slider Section -->
+    <!-- Slider Section 1 (Bootstrap Carousel) -->
     <section class="container mt-5">
       <div class="py-5 mx-auto">
         <div class="bg-black position-relative p-md-4 py-10 rounded-3">
@@ -131,53 +135,75 @@
 
             <!-- Right Column with Swiper -->
             <div class="col-md-7 col-12">
-              <div class="swiper">
-                <div class="swiper-wrapper">
-                  <!-- Slide 1 -->
-                  <div class="swiper-slide">
-                    <div class="d-flex flex-column justify-content-between">
-                      <p class="testimonial-text">
-                        He DJ knew exactly how to read the crowd and kept the
-                        energy up all night. Our corporate party was a huge
-                        success thanks to Dynamic Scene!
-                      </p>
-                      <div class="testimonial-author">
-                        <div class="author-img">
-                          <img
-                            src="./assestes/img/png/jonny-deo.png"
-                            alt="Johnny Doe"
-                          />
-                        </div>
-                        <div class="author-details">
-                          <h3 class="author-name">Johnny Doe</h3>
-                          <a href="/" class="author-link">ipsum.com</a>
-                        </div>
+              <div
+                id="carouselExampleControls"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <p class="testimonial-text">
+                      He DJ knew exactly how to read the crowd and kept the
+                      energy up all night. Our corporate party was a huge
+                      success thanks to Dynamic Scene!
+                    </p>
+                    <div class="testimonial-author">
+                      <div class="author-img">
+                        <img
+                          src="https://via.placeholder.com/50"
+                          alt="Johnny Doe"
+                        />
+                      </div>
+                      <div class="author-details">
+                        <h3 class="author-name">Johnny Doe</h3>
+                        <a href="/" class="author-link">ipsum.com</a>
                       </div>
                     </div>
                   </div>
-                  <!-- Slide 2 -->
-                  <div class="swiper-slide">
-                    <div class="d-flex flex-column justify-content-between">
-                      <p class="testimonial-text">
-                        He DJ knew exactly how to read the crowd and kept the
-                        energy up all night. Our corporate party was a huge
-                        success thanks to Dynamic Scene!
-                      </p>
-                      <div class="testimonial-author">
-                        <div class="author-img">
-                          <img
-                            src="./assestes/img/png/jonny-deo.png"
-                            alt="Johnny Doe"
-                          />
-                        </div>
-                        <div class="author-details">
-                          <h3 class="author-name">Johnny Doe</h3>
-                          <a href="/" class="author-link">ipsum.com</a>
-                        </div>
+                  <div class="carousel-item">
+                    <p class="testimonial-text">
+                      He DJ knew exactly how to read the crowd and kept the
+                      energy up all night. Our corporate party was a huge
+                      success thanks to Dynamic Scene!
+                    </p>
+                    <div class="testimonial-author">
+                      <div class="author-img">
+                        <img
+                          src="https://via.placeholder.com/50"
+                          alt="Johnny Doe"
+                        />
+                      </div>
+                      <div class="author-details">
+                        <h3 class="author-name">Johnny Doe</h3>
+                        <a href="/" class="author-link">ipsum.com</a>
                       </div>
                     </div>
                   </div>
                 </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleControls"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleControls"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
             </div>
           </div>
@@ -185,13 +211,130 @@
       </div>
     </section>
 
+    <!-- Slider Section 2 (Swiper) -->
+    <section class="relative">
+      <div class="container mt-134 mr-n20">
+        <div class="row slider-2 mt-4">
+          <!-- Text Section -->
+          <div class="col-12 col-lg-4 mb-3">
+            <div class="position-relative">
+              <p
+                class="fw-semibold text-sm sm:text-base border border-black inline rounded-3 px-3 py-2 text-black"
+                style="letter-spacing: 3.48px; display: inline-block"
+              >
+                BLOG
+              </p>
+              <p class="text-black fw-semibold mt-3 fs-64">Recent Events</p>
+              <div class="position-absolute flower-img">
+                <img
+                  src="https://via.placeholder.com/50"
+                  alt="flower"
+                  style="width: 50px"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Swiper Section -->
+          <div class="col-12 col-lg-8 d-flex swiper2 p-sm-0">
+            <div class="swiper mySwiper-2">
+              <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                  <div>
+                    <div class="slider-img">
+                      <img
+                        src="https://via.placeholder.com/500x300"
+                        alt="party"
+                        class="w-100"
+                      />
+                    </div>
+                    <p
+                      class="fw-semibold fs-24 border-bottom pb-2 text-black mt-2"
+                    >
+                      Lorem ipsum dolor sit amet consectetur.
+                    </p>
+                    <p class="fs-16 fw-medium mt-1 text-start text-black">
+                      May 4, 2024
+                    </p>
+                  </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                  <div>
+                    <div class="slider-img">
+                      <img
+                        src="https://via.placeholder.com/500x300"
+                        alt="party"
+                        class="w-100"
+                      />
+                    </div>
+                    <p
+                      class="fw-semibold fs-24 border-bottom pb-2 text-black mt-2"
+                    >
+                      Lorem ipsum dolor sit amet consectetur.
+                    </p>
+                    <p class="fs-16 fw-medium mt-1 text-start text-black">
+                      May 4, 2024
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Arrow navigation for swiper -->
+        <div class="arrow-2 position-relative">
+          <div class="swiper-button-next-2 position-absolute">
+            <img
+              class="slider-arrow-2"
+              src="https://via.placeholder.com/50"
+              alt="next"
+            />
+          </div>
+          <div class="swiper-button-prev-2 position-absolute">
+            <img
+              class="slider-arrow-2"
+              src="https://via.placeholder.com/50"
+              alt="prev"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
     <script>
-      const swiper = new Swiper(".swiper", {
+      const swiper1 = new Swiper(".mySwiper-2", {
         loop: true,
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: ".swiper-button-next-2",
+          prevEl: ".swiper-button-prev-2",
+        },
+        breakpoints: {
+          300: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          400: {
+            slidesPerView: 1.2,
+            spaceBetween: 30,
+          },
+          500: {
+            slidesPerView: 1.6,
+            spaceBetween: 30,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 1.8,
+            spaceBetween: 40,
+          },
         },
       });
     </script>

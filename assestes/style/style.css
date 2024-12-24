@@ -18,6 +18,9 @@ body {
 .fs-24 {
   font-size: 24px !important;
 }
+.fs-40 {
+  font-size: 40px !important;
+}
 .fs-56 {
   font-size: 56px !important;
 }
@@ -402,4 +405,45 @@ body {
 }
 .mt-240 {
   margin-top: 240px;
+}
+.bg-black {
+  background-color: #000;
+}
+.left-40 {
+  left: 20px !important;
+}
+.b-30 {
+  bottom: 30px !important;
+}
+.swiper {
+  padding: 30px 0;
+}
+.swiper-slide img {
+  border-radius: 5px;
+  border: 3px solid white;
+}
+.bottom-auto {
+  bottom: auto;
+}
+.nev-btn .swiper-button-next,
+.swiper-button-prev {
+  max-width: 320px !important;
+}
+.text-black {
+  color: #000000 !important;
+  text-decoration: none !important;
+}
+.mt-196 {
+  margin-top: 196px !important;
+}
+.slider-1 {
+  max-width: 1300px !important;
+  padding: 0px 10px !important;
+  margin: 10px !important;
+}
+.bottom-0 {
+  bottom: 0px;
+}
+.mt-160 {
+  margin-top: 160px !important;
 }
